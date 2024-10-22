@@ -1,0 +1,59 @@
+{
+  "name": "@six-org/styled-system",
+  "description": "Generated styled-system tokens and patterns for Six",
+  "version": "0.0.8",
+  "type": "module",
+  "scripts": {
+    "prepare": "panda codegen",
+    "dev": "panda codegen --watch",
+    "build": "panda codegen",
+    "prepublish": "panda codegen"
+  },
+  "files": [
+    "*/**",
+    "helpers.mjs"
+  ],
+  "devDependencies": {
+    "@pandacss/dev": "^0.46.1",
+    "@pandacss/preset-panda": "^0.47.0",
+    "@six-org/foundation": "workspace:*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "exports": {
+    "./css": {
+      "types": "./css/index.d.ts",
+      "require": "./css/index.mjs",
+      "import": "./css/index.mjs"
+    },
+    "./tokens": {
+      "types": "./tokens/index.d.ts",
+      "require": "./tokens/index.mjs",
+      "import": "./tokens/index.mjs"
+    },
+    "./types": {
+      "types": "./types/index.d.ts",
+      "require": "./types/index.mjs",
+      "import": "./types/index.mjs"
+    },
+    "./patterns": {
+      "types": "./patterns/index.d.ts",
+      "require": "./patterns/index.mjs",
+      "import": "./patterns/index.mjs"
+    },
+    "./recipes": {
+      "types": "./recipes/index.d.ts",
+      "require": "./recipes/index.mjs",
+      "import": "./recipes/index.mjs"
+    },
+    "./jsx": {
+      "types": "./jsx/index.d.ts",
+      "require": "./jsx/index.mjs",
+      "import": "./jsx/index.mjs"
+    },
+    "./styles.css": "./styles.css"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

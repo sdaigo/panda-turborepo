@@ -1,0 +1,56 @@
+{
+  "name": "@six-org/foundation",
+  "version": "0.0.8",
+  "description": "Panda CSS Preset for six design system",
+  "type": "module",
+  "main": "src/index.ts",
+  "module": "src/index.ts",
+  "files": ["dist", "src"],
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "prepublish": "pnpm run build"
+  },
+  "devDependencies": {
+    "@ark-ui/anatomy": "^3.5.0",
+    "@ark-ui/react": "^4.1.1",
+    "@chromatic-com/storybook": "^1.9.0",
+    "@pandacss/dev": "^0.46.1",
+    "@pandacss/studio": "^0.46.1",
+    "@storybook/addon-essentials": "^8.3.5",
+    "@storybook/addon-interactions": "^8.3.5",
+    "@storybook/addon-links": "^8.3.5",
+    "@storybook/blocks": "^8.3.5",
+    "@storybook/react": "^8.3.5",
+    "@storybook/react-vite": "^8.3.5",
+    "@storybook/test": "^8.3.5",
+    "@types/node": "^20.11.24",
+    "@types/react": "^18.2.61",
+    "@types/react-dom": "^18.2.19",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.8",
+    "vite-tsconfig-paths": "^5.0.1"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
