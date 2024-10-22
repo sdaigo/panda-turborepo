@@ -1,6 +1,6 @@
 {
   "name": "@six-org/objects",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "publishConfig": {
     "access": "public"
   },
@@ -53,5 +53,6 @@
       "import": "./dist/index.mjs",
       "require": "./dist/index.js"
     }
-  }
+  },
+  "repository": "https://github.com/sdaigo/panda-turborepo.git"
 }
