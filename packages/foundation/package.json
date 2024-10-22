@@ -1,6 +1,6 @@
 {
   "name": "@six-org/foundation",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "description": "Panda CSS Preset for six design system",
   "type": "module",
   "main": "src/index.ts",
@@ -52,5 +52,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "repository": "https://github.com/sdaigo/panda-turborepo.git"
 }
